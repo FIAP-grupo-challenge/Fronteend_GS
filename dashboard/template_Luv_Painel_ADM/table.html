@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Painel ADM Luv2Mob</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body onload="fetchText1">
+    <div class="container-fluid position-relative d-flex p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Sidebar Start -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-secondary navbar-dark">
+                <a href="index.html" class="navbar-brand mx-4 mb-3">
+                    <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>Luv2Mob</h3>
+                </a>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="position-relative">
+                        <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
+                    </div>
+                    <div class="ms-3">
+                        <h6 class="mb-0">Jhon Doe</h6>
+                        <span>Admin</span>
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+                    
+                    <a href="index.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
+                    <a href="table.html" class="nav-item nav-link active"><i class="fa fa-table me-2"></i>Tables</a>
+                    
+                </div>
+            </nav>
+        </div>
+        <!-- Sidebar End -->
+
+
+        <!-- Content Start -->
+        <div class="content">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
+                <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+                    <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
+                </a>
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <form class="d-none d-md-flex ms-4">
+                    <input class="form-control bg-dark border-0" type="search" placeholder="Search">
+                </form>
+                <div class="navbar-nav align-items-center ms-auto">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                            <span class="d-none d-lg-inline-flex">John Doe</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">My Profile</a>
+                            <a href="#" class="dropdown-item">Settings</a>
+                            <a href="#" class="dropdown-item">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar End -->
+
+
+            <!-- Table Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="row g-4" id="post-items-container">
+                    
+                    
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 1</h6>
+                            <p id="text_1"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=1" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 2</h6>
+                            <p id="text_2"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=2" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 3</h6>
+                            <p id="text_3"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=3" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 4</h6>
+                            <p id="text_4"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=4" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 5</h6>
+                            <p id="text_5"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=5" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 6</h6>
+                            <p id="text_6"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=6" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 7</h6>
+                            <p id="text_7"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=7" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 8</h6>
+                            <p id="text_8"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=8" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 9</h6>
+                            <p id="text_9"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=9" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 10</h6>
+                            <p id="text_10"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=10" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 11</h6>
+                            <p id="text_11"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=11" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 12</h6>
+                            <p id="text_12"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=12" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 13</h6>
+                            <p id="text_13"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=13" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 14</h6>
+                            <p id="text_14"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=14" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 15</h6>
+                            <p id="text_15"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=15" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 16</h6>
+                            <p id="text_16"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=16" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 17</h6>
+                            <p id="text_17"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=117" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 18</h6>
+                            <p id="text_18"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=18" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 19</h6>
+                            <p id="text_19"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=19" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 20</h6>
+                            <p id="text_20"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=20" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 21</h6>
+                            <p id="text_21"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=21" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 22</h6>
+                            <p id="text_22"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=22" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 23</h6>
+                            <p id="text_23"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=23" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 24</h6>
+                            <p id="text_24"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=24" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 25</h6>
+                            <p id="text_25"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=25" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 26</h6>
+                            <p id="text_26"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=26" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 27</h6>
+                            <p id="text_27"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=27" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">text_id = 28</h6>
+                            <p id="text_28"></p>
+                            <a href="http://127.0.0.1:5501/index.html?id=28" class="btn btn-primary" >Editar</a>
+                        </div>
+                    </div>
+                    <script>
+                        fetch('http://127.0.0.1:80/api/get/all/text') // Replace with the URL of your API
+                          .then(response => response.json())
+                          .then(data => {
+                            const text1 = document.getElementById('text_1');
+                            text1.innerText = data["1"];
+                            const text2 = document.getElementById('text_2');
+                            text2.innerText = data["2"];
+                            const text3 = document.getElementById('text_3');
+                            text3.innerText = data["3"];
+                            const text4 = document.getElementById('text_4');
+                            text4.innerText = data["4"];
+                            const text5 = document.getElementById('text_5');
+                            text5.innerText = data["5"];
+                            const text6 = document.getElementById('text_6');
+                            text6.innerText = data["6"];
+                            const text7 = document.getElementById('text_7');
+                            text7.innerText = data["7"];
+                            const text8 = document.getElementById('text_8');
+                            text8.innerText = data["8"];
+                            const text9 = document.getElementById('text_9');
+                            text9.innerText = data["9"];
+                            const text10 = document.getElementById('text_10');
+                            text10.innerText = data["10"];
+                            const text11 = document.getElementById('text_11');
+                            text11.innerText = data["11"];
+                            const text12 = document.getElementById('text_12');
+                            text12.innerText = data["12"];
+                            const text13 = document.getElementById('text_13');
+                            text13.innerText = data["13"];
+                            const text14 = document.getElementById('text_14');
+                            text14.innerText = data["14"];
+                            const text15 = document.getElementById('text_15');
+                            text15.innerText = data["15"];
+                            const text16 = document.getElementById('text_16');
+                            text16.innerText = data["16"];
+                            const text17 = document.getElementById('text_17');
+                            text17.innerText = data["17"];
+                            const text18 = document.getElementById('text_18');
+                            text18.innerText = data["18"];
+                            const text19 = document.getElementById('text_19');
+                            text19.innerText = data["19"];
+                            const text20 = document.getElementById('text_20');
+                            text20.innerText = data["20"];
+                            const text21 = document.getElementById('text_21');
+                            text21.innerText = data["21"];
+                            const text22 = document.getElementById('text_22');
+                            text22.innerText = data["22"];
+                            const text23 = document.getElementById('text_23');
+                            text23.innerText = data["23"];
+                            const text24 = document.getElementById('text_24');
+                            text24.innerText = data["24"];
+                            const text25 = document.getElementById('text_25');
+                            text25.innerText = data["25"];
+                            const text26 = document.getElementById('text_26');
+                            text26.innerText = data["26"];
+                            const text27 = document.getElementById('text_27');
+                            text27.innerText = data["27"];
+                            const text28 = document.getElementById('text_28');
+                            text28.innerText = data["28"];
+                          })
+                          .catch(error => console.error(error));
+                      </script>
+
+                </div>
+            </div>
+            <!-- Table End -->
+
+
+            <!-- Footer Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-secondary rounded-top p-4">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 text-center text-sm-start">
+                            &copy; <a href="#">Your Site Name</a>, All Right Reserved. 
+                        </div>
+                        <div class="col-12 col-sm-6 text-center text-sm-end">
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                            <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+        </div>
+        <!-- Content End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/chart/chart.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

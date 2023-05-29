@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Example Page</title>
+  </head>
+  <body>
+    <h1>Example Page</h1>
+    <div id="text_1"></div>
+
+    <script>
+      fetch('http://127.0.0.1:80/api/get/all/text') // Replace with the URL of your API
+        .then(response => response.json())
+        .then(data => {
+          const text1 = document.getElementById('text_1');
+          text1.innerText = data["1"];
+          const text2 = document.getElementById('text_2');
+          text1.innerText = data["2"];
+          const text3 = document.getElementById('text_3');
+          text1.innerText = data["3"];
+          const text4 = document.getElementById('text_4');
+          text1.innerText = data["4"];
+        })
+        .catch(error => console.error(error));
+    </script>
+  </body>
+</html>
