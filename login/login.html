@@ -4,25 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assests/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assests/input.css">
+    <link rel="stylesheet" href="./assests/structuration.css">
+    <link rel="stylesheet" href="./assests/animations.css">
+    <title>Login</title>
+
+    
 </head>
 <body>
-    <div class="login">
-        <img src="../imagens/logo-estufa-mini-removebg-preview.png" alt="logo" class="logo">
-        <div>
-			<form name="loginForm" onsubmit="return validateForm()" class="design">
-				<label for="Usuario">Username:</label>
-				<input type="text" id="username" name="username" placeholder="Login">
-				<label for="Senha">Password:</label>
-				<input type="password" id="password" name="password" placeholder="Senha">
-                <button type="submit" value="Login"class="button">Logar</button>
-			</form>
-		</div>
-    </div>
-    <div class="img-bg">
-        <div>
-            <img src="../imagens/planeta.png" alt="" class="planet">
+    <div class="container">
+        <div class="content">
+            <div><img src="../imagens/WhatsApp Image 2023-06-02 at 13.38.41.jpeg" alt="logo" class="logo"></div>
+            <div class="animation">
+                <div >
+                    <form action="" class="structure">
+
+                        <label>
+                            <input type="text" placeholder=" ">
+                            <p>Login</p>
+                        </label>
+                        <label >
+                            <input type="password" placeholder=" ">
+                            <p>senha</p>
+                        </label>
+                        <div class="wrapper-input">
+                    </div>
+                        <button type="submit" class="btn">Entrar</button>
+                    </div>
+                </form>
+
+                <div class="footer">
+                    <div class="hStack">
+                        <div> 
+                            <p>Ainda não tem conta?<a href="">Cadastre-se</a></p>
+                        </div>
+                        <div>
+                            <p>
+                                propriedade &#169; Todos os direitos reservados
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background-img">
+            <div class="overlay"></div>
         </div>
     </div>
 </body>
