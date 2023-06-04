@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Catamaran;
+    transition: all ease .5s;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background: black;
+}
