@@ -2,46 +2,110 @@
 <html lang="en">
 
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;600&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assests/structure.css">
-  <link rel="stylesheet" href="./assests/styles.css">
-  <link rel="stylesheet" href="./assests/hamburguer.css">
-  <link rel="stylesheet" href="./assests/grapich.css">
-  <title>dashboard</title>
- 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assests/structure_header.css">
+    <link rel="stylesheet" href="./assests/structure.css">
+    <link rel="stylesheet" href="./assests/styles.css">
+    <link rel="stylesheet" href="./assests/hamburguer.css">
+    <link rel="stylesheet" href="./assests/grapich.css">
+    <link rel="stylesheet" href="./assests/responsive.css">
+    <title>dashboard</title>
+
 
 </head>
 
 <body>
 
-  <header>
-    <div id="menu">
-      <div id="menu-bar" onclick="menuOnClick()">
-        <div id="bar1" class="bar"></div>
-        <div id="bar2" class="bar"></div>
-        <div id="bar3" class="bar"></div>
-      </div>
+    <header>
+        <div class="space">
+            <div id="menu">
+                <div id="menu-bar" onclick="menuOnClick()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+            <div>
+                <img src="../imagens/logo-removebg-preview.png" alt="logo" class="logo">
+            </div>
+        </div>
+        <div class="profile">
+            <div><img src="../imagens/user-green.png" alt="" class="icon">
+            </div>
+            <p>ID</p>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="nav" id="nav">
+            <nav>
+                <ul>
+                    <li><a href="#">planta1</a></li>
+                    <li><a href="#">Planta2</a></li>
+                    <li><a href="#">Planta3</a></li>
+                    <li><a href="#">Planta4</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="container1">
+            <div class="box1">
+                <div>
+                    <img src="../imagens/folha.png" alt="" class="icon">
+                </div>
+                <p>planta1</p>
+            </div>
+            <div class="box2">
+
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="datas">
+                <div class="data">
+                    <div>
+                        <img src="../imagens/gotas.png" alt="" class="icon">
+                    </div>
+                </div>
+                <div class="data">
+                    <div>
+                        <img src="../imagens/lampada.png" alt="" class="icon">
+                    </div>
+                </div>
+                <div class="data">
+                    <div>
+                        <img src="../imagens/ph.png" alt="" class="icon">
+                    </div>
+                </div>
+            </div>
+            <div class="datas">
+                <div class="data">
+                    <div>
+                        <img src="../imagens/termometro.png" alt="" class="icon">
+                    </div>
+                </div>
+                <div class="data">
+                    <div>
+                        <img src="../imagens/ventoinha.png" alt="" class="icon">
+                    </div>
+                </div>
+                <div class="data">
+                    <div>
+                        <img src="../imagens/planta_com-gotas.png" alt="" class="icon">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </header>
+    <footer>
 
-  <aside class="nav" id="nav">
-    <nav >
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
-    </nav>
-  </aside>
+    </footer>
 
-
-  <script src="./js/hamburguer.js"></script>
+    <script src="./js/hamburguer.js"></script>
 
 </body>
 
