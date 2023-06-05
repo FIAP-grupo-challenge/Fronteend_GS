@@ -22,6 +22,9 @@ footer{
 a{
     color: white;
     font-style: none;
+}
+a+a{
+    margin: 70px;
 } 
 .whats, .insta{
     width: 30px;
