@@ -31,7 +31,7 @@ aside {
   position: absolute;
   height: calc(100vh - 10vh);
   background: #78A244;
-  transition: 0.3s ease;
+  transition: 0.4s ;
   left: -200%;
 }
 
