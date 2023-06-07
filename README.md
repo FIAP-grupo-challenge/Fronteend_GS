@@ -25,7 +25,7 @@ Deve ser usado em conjunto com a <a href="https://github.com/FIAP-grupo-challeng
 
 1. Clonar o respositorio
     ```sh
-    git clone https://github.com/FIAP-grupo-challenge/Python_algoritimo_assincrono_GS
+    git clone https://github.com/FIAP-grupo-challenge/Fronteend_GS.git
     ```
 
 
@@ -48,8 +48,12 @@ Este Algoritimo contém 6 htmls sendo eles:
 <div>
 <p>
 Usando o Javascript foram realizadas:
-a. Slideshow de imagens que contém link para acessar pesquisar relacionadas, na home
-b. Nas páginas, 
+a. Slideshow de imagens 
+b. Darkmode 
+c. Gráfico de rendimento 
+d. data e hora
+e. verificação de login e cadastro
+f. hamburguer navegador
   
 </p><br>
 <p>Conexão da API com o Banco: <br><br>
