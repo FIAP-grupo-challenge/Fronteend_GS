@@ -30,38 +30,24 @@ Deve ser usado em conjunto com a <a href="https://github.com/FIAP-grupo-challeng
 
 
 
-## Funcionalidades
-Este Algoritimo preve a atualização dos campos status e warnings de cada planta individual no banco de dados, devido a 
-grande carga de dados e uma necessidade de executar esse codigo em curtos intervalos de tempo para que haja uma
-boa experiencia do cliente.
-Decidimos optar pelo modelo Assincrono, isto é, opera de modo independente das outras funcionladiades, 
-sem precisar de chamadas ou imputs (com exeção do banco de dados)
+## Funcionalidades:
+Usando Html, Css e Javascript, desenvolvemos um site completo que tembém tem a área do cliente, o header principal dispõe acesso as páginas, dentro as páginas home, quem somos?, miniestufa e login. Sendo possível transacionar continuamente entre as 3 primeiras, respectivamente.  
+Este Algoritimo contém 6 htmls sendo eles:
+1. Home: Nesta página terá uma introdução breve do problemma, nossa solução e como isso irá impactar, além disso usando o slideshow de imagens, terá 4 pesquisar disponíveis paara acesso sobre agricultura inteligente, fome e IA nesse ambiente. 
+2. Quem Somos?: Nesta página terá uma introdução das pessoas responsavéis na construção do projeto
+3. Miniestufa: Nesta página terá a explicação do nosso produto e suas tecnologias
+4. Login: Nesta página ao completar o login pre definido por hora, sendo login ("nome") e a senha ("senha"), posteriomente terá a integração com a API do Banco de Dados, usando o JavaScript e ao logar terá acesso ao dashboard exclusivo
+5. Cadastro: Nesta página o cliente terá que realizar o cadastro, sendo necessário informar nome, idade, CPF, CEP, email, Senha e confirmação de senha, para que assim poder ter acesso ao dashboard, ao completar por hora apenas irá para a tela de dashboard beta para demonstração, posteriormente iremos desenvolver um mecanisco que o cliente irá selecionar 4 opções de cultivo de escolha, sendo um grão, uma horatliça, um legume e uma verdura e conectando a API, esses dados ficarão armazenados ao ID do cliente.
+6. Dashboard: O dashboard irá disponibilizar um controle da estufa, em que ainda está em desenvolvimento para ser um dashboard interativo, onde ele terá controle total da estufa e caso precise de alguma alteração será possível realizar de qualquer lugar que ele esteja, apenas tendo acesso a internet. Além da necessidade da conexão com a API do algortimo assícrono junto a do banco de dados.
 
-## Funcionamento
-puxamos os dados da planta do banco de dados, verificamos seu ultimo 
-registro com informações do ambiente, e fazemos diversas comparações 
-dinamicas para determinar a saude da planta de acordo com as leituras 
-dos scensores arduino, e com o seu tipo
-(Tomate, Pimentão, Abobrinha, Alface, Rúcula, Espinafre, Feijão, Ervilha,
-Lentilha, Cenoura, Beterraba, Rabanete) São os inclusos atualmente neste algoritimo.
-<br>
-<a href="https://docs.google.com/document/d/1Cksx6UsUF8wGBm-A323HxZ9ASwI1IkP1oj8LSV79PgM">Documentação referencia</a>,
- <a href="https://docs.google.com/spreadsheets/d/1H01g-dSNPxh0MEEofo5OklKyFkWevS91xhuCoi0P0Is">Formulas das comparações</a>.
 
-## Banco de dados
+
+
+## Java Script
 
 <div>
 <p>
-Para uma documentação mais completa do Banco visite o respositorio <a href="https://github.com/FIAP-grupo-challenge/Banco_de_dados_GS">Banco de Dados</a></A><br><br>
-O banco de dados escolhido para esta aplicação foi <a href="https://www.postgresql.org">PostgreSQL</a><br><br>
-Motivos desta escolha: <br><br>
-* Maturidade e estabilidade: O PostgreSQL tem uma história de desenvolvimento longa e bem estabelecida, remontando a mais de 30 anos. Ele é conhecido por sua confiabilidade, robustez e estabilidade, sendo amplamente utilizado em ambientes de produção exigentes.<br>
-* Suporte a SQL completo: O PostgreSQL adere estritamente aos padrões ANSI SQL e oferece suporte a um amplo conjunto de recursos SQL, incluindo subconsultas, junções complexas, desencadeadores (triggers), procedimentos armazenados e muito mais. Isso torna o PostgreSQL altamente compatível com outras bases de dados e facilita a migração de aplicativos de outros sistemas de gerenciamento de banco de dados.<br>
-* Extensibilidade: O PostgreSQL é altamente extensível, permitindo que os usuários adicionem novos tipos de dados, funções, operadores e até mesmo recursos personalizados por meio de extensões. Além disso, ele suporta várias linguagens de programação (como PL/pgSQL, PL/Python, PL/Java) para escrever procedimentos armazenados e funções personalizadas.<br>
-* Recursos avançados: O PostgreSQL possui uma ampla gama de recursos avançados, incluindo suporte a transações ACID (Atomicidade, Consistência, Isolamento e Durabilidade), replicação síncrona e assíncrona, particionamento de tabelas, índices avançados (como índices GIN e GiST para pesquisa de texto completo e dados geométricos), entre outros. Esses recursos fornecem flexibilidade e desempenho aprimorado para uma variedade de casos de uso.<br>
-* Suporte a dados geoespaciais: O PostgreSQL possui suporte nativo a dados geoespaciais, permitindo a realização de consultas e operações complexas em dados com componentes espaciais. Isso é particularmente útil para aplicativos de mapeamento, sistemas de informação geográfica (GIS) e análises baseadas em localização.<br>
-* Comunidade ativa: O PostgreSQL possui uma comunidade de usuários ativa e engajada, que contribui com melhorias, correções de bugs e desenvolvimento contínuo do sistema. Essa comunidade vibrante resulta em um software de alta qualidade, suporte técnico abrangente e ampla disponibilidade de recursos e tutoriais online.<br>
-* Licença de código aberto: O PostgreSQL é distribuído sob a licença PostgreSQL, que é uma licença de código aberto. Isso significa que você pode usá-lo, modificá-lo e distribuí-lo gratuitamente, além de ter acesso ao código-fonte completo. A licença de código aberto promove a transparência, flexibilidade e independência em relação a um fornecedor específico.
+
 </p><br>
 <p>Conexão da API com o Banco: <br><br>
 A conexão é feita por meio da biblioteca do Python <a href="https://pypi.org/project/psycopg2/">psycopg2</a> utilizando a URL de conexão como parametro</p><br>
