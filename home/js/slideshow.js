@@ -11,7 +11,7 @@ var imagens = [
     },
     {
       path: "https://jornal.usp.br/ciencias/por-meio-de-inteligencia-artificial-solucao-criada-na-usp-facilita-tomada-de-decisao-para-o-combate-a-fome/",
-      url: '../imagens/social.png',
+      url: '../../imagens/social.png',
       alt: "link usp"
     },
     {
