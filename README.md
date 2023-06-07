@@ -11,7 +11,7 @@
 
 <div>
 <p>
-  Nossa ideia consiste em uma mini estufa com assistência IA e integração com nosso site que dará uma experiência personalizada, simples e agradável para o usuário. Buscamos promover a auto suficiência das casas do mundo evitando a emissão de gases carbônicos dos meios de transporte de alimentos e a grande exploração dos solos da terra, além de permitir que independente das condições ambientais do cliente, ele possa ter controle e acesso a alimentos que sem a estufa seriam de maior dificuldade, como seriam zonas de  extremos calor ou frio ,até mesmo falta de recursos do solo ou água.
+  Nossa ideia consiste em uma mini estufa com assistência IA e integração com nosso site que dará uma experiência personalizada, simples e agradável para o usuário. Buscamos promover a auto suficiência das casas do mundo evitando a emissão de gases carbônicos dos meios de transporte de alimentos e a grande exploração dos solos da terra, além de permitir que independente das condições ambientais do cliente, ele possa ter controle e acesso a alimentos que sem a estufa seriam de maior dificuldade, como seriam zonas de  extremos calor ou frio ,até mesmo falta de recursos do solo ou água. <br>
 Outra meta do nosso projeto é de ser acessível, para que pessoas de baixa renda também
 tenham acesso e possam assim cultivar seus próprios alimentos diminuindo gastos e fugindo
 dos preços constantemente inflacionados
