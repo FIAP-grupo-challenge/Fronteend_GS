@@ -47,7 +47,10 @@ Este Algoritimo contém 6 htmls sendo eles:
 
 <div>
 <p>
-
+Usando o Javascript foram realizadas:
+a. Slideshow de imagens que contém link para acessar pesquisar relacionadas, na home
+b. Nas páginas, 
+  
 </p><br>
 <p>Conexão da API com o Banco: <br><br>
 A conexão é feita por meio da biblioteca do Python <a href="https://pypi.org/project/psycopg2/">psycopg2</a> utilizando a URL de conexão como parametro</p><br>
