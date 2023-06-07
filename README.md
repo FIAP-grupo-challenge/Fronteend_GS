@@ -33,7 +33,7 @@ dos preços constantemente inflacionados
 ## Funcionalidades:
 Usando Html, Css e Javascript, desenvolvemos um site completo que tembém tem a área do cliente, o header principal dispõe acesso as páginas, dentro as páginas home, quem somos?, miniestufa e login. Sendo possível transacionar continuamente entre as 3 primeiras, respectivamente.  
 Este Algoritimo contém 6 htmls sendo eles:
-1. Home: Nesta página terá uma introdução breve do problemma, nossa solução e como isso irá impactar, além disso usando o slideshow de imagens, terá 4 pesquisar disponíveis paara acesso sobre agricultura inteligente, fome e IA nesse ambiente. 
+1. Home: Nesta página terá uma introdução breve do problema, nossa solução e como isso irá impactar, além disso usando o slideshow de imagens, terá 4 pesquisar disponíveis paara acesso sobre agricultura inteligente, fome e IA nesse ambiente. 
 2. Quem Somos?: Nesta página terá uma introdução das pessoas responsavéis na construção do projeto
 3. Miniestufa: Nesta página terá a explicação do nosso produto e suas tecnologias
 4. Login: Nesta página ao completar o login pre definido por hora, sendo login ("nome") e a senha ("senha"), posteriomente terá a integração com a API do Banco de Dados, usando o JavaScript e ao logar terá acesso ao dashboard exclusivo
