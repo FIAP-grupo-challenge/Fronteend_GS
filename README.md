@@ -21,22 +21,13 @@ Deve ser usado em conjunto com a <a href="https://github.com/FIAP-grupo-challeng
 
 </div>
 
-## Dependencias
-
-1. <a href="https://pypi.org/project/python-dotenv/">Python-dotenv</a> : python-dotenv é uma biblioteca em Python que permite carregar variáveis de ambiente de um arquivo .env para facilitar a configuração de uma aplicação.
-2. <a href="https://pypi.org/project/psycopg2/">Psycopg2-binary</a> : psycopg2 é uma biblioteca em Python que fornece uma interface para se conectar e interagir com bancos de dados PostgreSQL. Estamos utilzando a versão "binary" Para evitar problemas de compatibilidade com a biblioteca <a href="https://flask.palletsprojects.com/en/2.3.x/">Flask</a>
-
 ## Instalação
 
 1. Clonar o respositorio
     ```sh
     git clone https://github.com/FIAP-grupo-challenge/Python_algoritimo_assincrono_GS
     ```
-2. Instalar dependencias
-    ```sh
-    pip install -r requirements.txt
-    ```
-3. rodar arquivo run.py
+
 
 
 ## Funcionalidades
