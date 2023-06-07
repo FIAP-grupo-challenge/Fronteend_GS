@@ -1,7 +1,7 @@
 # Fronteend_GS
 
 
-Logo
+![image](https://github.com/FIAP-grupo-challenge/Fronteend_GS/assets/126498244/7273016d-833d-486d-8782-cc78ac7a31bc)
 Sobre o projeto
 Este Algoritmo Assincrono foi desenvolvido para tirar a carga de processamentos de dados da API deixando assim seu response time mais rapido
 
