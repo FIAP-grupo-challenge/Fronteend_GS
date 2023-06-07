@@ -116,6 +116,7 @@ Hospedagem do banco de dados:
 O banco de dados atualmente se econtra hospedado com o serviço gratuito ElephantSQL
 
 Desenvolvedores
+
 Nome: Lucas Fernandes Joaquim, RM: 551313
 Nome: Gustavo Ferreira Lopes, RM: 98887
 Nome: heitor freire dos anjos, RM: 552165
