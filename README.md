@@ -10,11 +10,11 @@
 ## Sobre o projeto
 
 <div>
-<p>Este Algoritmo Assincrono foi desenvolvido para tirar a carga de
-processamentos de dados da <a>API</a> deixando assim seu response time mais rapido <br><br>
-Deve ser usado em conjunto com a <a href="https://github.com/FIAP-grupo-challenge/Python_GS">API</a></p>
-<p>Areas que o Algoritmo Assincrono afeta: <br>
-* Banco de dados <br>
+<p>
+  Nossa ideia consiste em uma mini estufa com assistência IA e integração com nosso site que dará uma experiência personalizada, simples e agradável para o usuário. Buscamos promover a auto suficiência das casas do mundo evitando a emissão de gases carbônicos dos meios de transporte de alimentos e a grande exploração dos solos da terra, além de permitir que independente das condições ambientais do cliente, ele possa ter controle e acesso a alimentos que sem a estufa seriam de maior dificuldade, como seriam zonas de  extremos calor ou frio ,até mesmo falta de recursos do solo ou água.
+Outra meta do nosso projeto é de ser acessível, para que pessoas de baixa renda também
+tenham acesso e possam assim cultivar seus próprios alimentos diminuindo gastos e fugindo
+dos preços constantemente inflacionados
 </p>
 </div>
 <div align="center">
