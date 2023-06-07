@@ -25,12 +25,26 @@
     justify-content: flex-end;
     align-items: left;
     padding: 20px;
-
-    background-image: url("https://github.com/lucasrsrodrigues.png") ;
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
 
+}
+
+.gustavo{
+    background-image: url("../../imagens/Lopess.jpg") ;
+}
+.lucas{
+    background-image: url("../../imagens/lucas.jpg") ;
+}
+.heitor{
+    background-image: url("../../imagens/Heitor.jpg") ;
+}
+.rodrigo{
+    background-image: url("../../imagens/rodrigo.jpg") ;
+}
+.enzo{
+    background-image: url("../../imagens/enzo.jpg") ;
 }
 
 .apresentation-overlay {
@@ -39,13 +53,17 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: #00000030;
+    background: #00000040;
     z-index: 1;
 }
 h3{
     color:#78A244;
+    
 }
+.apresentation p {
+    color: #ffffff;
 
+}
 .apresentation h3, .apresentation p {
     z-index: 1999;
 }
