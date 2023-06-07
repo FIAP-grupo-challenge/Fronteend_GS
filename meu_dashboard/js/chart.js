@@ -1,4 +1,4 @@
-// Criação do gráfico de rendimento
+
 const ctx = document.getElementById('grafico').getContext('2d');
 
     fetch('/api/rendimento')

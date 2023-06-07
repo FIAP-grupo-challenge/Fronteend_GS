@@ -6,7 +6,7 @@ function validateForm() {
         return false;
     } else if (username == "nome" && password == "senha") {
         alert("Login successful!");
-        window.open('http://127.0.0.1:5500/web/index.html');
+        window.open('http://127.0.0.1:5500/meu_dashboard/dash.html');
         return false;
     } else {
         alert("inválida senha e/ou usuario");
