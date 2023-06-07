@@ -2,10 +2,12 @@
     width: 40px;
     height: 40px;
 }
-.value{
-    font-size: 50px;
-    box-sizing: border-box;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.dark {
+    background-color: #3f3f3f;
+}
+.dark header{
+    background-color: #3f3f3f;
+}
+.dark p {
+    color: #78A244;
 }

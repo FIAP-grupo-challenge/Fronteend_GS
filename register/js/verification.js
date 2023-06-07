@@ -16,7 +16,13 @@ function teste(e){
         alert ("Proibido para menores de idade")
         return;
     } 
-
+    
+    if (email.includes("@")){
+        console.log("email válido");
+    } else {
+        alert("formato de email inválido")
+        return;
+    }
 
     if (senha !== confirmarSenha) {
         alert("As senhas não coincidem.");

@@ -68,5 +68,12 @@ body{
     background-color: transparent;
     box-shadow: 1px 1px 3px 1px rgba(0,0,0,1);
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.value{
+    font-size: 30px;
 }
 
