@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="#">
-    <img src="images/logo.png" alt="Logo" width="auto" height="80">
+    <img src="[images/logo.png](https://raw.githubusercontent.com/FIAP-grupo-challenge/Python_algoritimo_assincrono_GS/master/images/logo.png)" alt="Logo" width="auto" height="80">
   </a>
 </div>
 
