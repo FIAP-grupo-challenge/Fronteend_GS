@@ -44,12 +44,12 @@ Este Algoritimo contém 6 htmls sendo eles:
 
 
 ## Java Script
-Usando o Javascript foram realizadas:
-a. Slideshow de imagens 
-b. Darkmode 
-c. Gráfico de rendimento 
-d. data e hora
-e. verificação de login e cadastro
+Usando o Javascript foram realizadas: <br>
+a. Slideshow de imagens <br>
+b. Darkmode <br>
+c. Gráfico de rendimento <br>
+d. data e hora<br>
+e. verificação de login e cadastro<br>
 f. hamburguer navegador
 
   
