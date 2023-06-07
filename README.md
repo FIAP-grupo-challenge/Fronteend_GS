@@ -44,9 +44,6 @@ Este Algoritimo contém 6 htmls sendo eles:
 
 
 ## Java Script
-
-<div>
-<p>
 Usando o Javascript foram realizadas:
 a. Slideshow de imagens 
 b. Darkmode 
@@ -54,7 +51,7 @@ c. Gráfico de rendimento
 d. data e hora
 e. verificação de login e cadastro
 f. hamburguer navegador
-  </p>
+
   
 
 
