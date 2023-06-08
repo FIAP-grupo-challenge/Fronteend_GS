@@ -8,6 +8,13 @@ body{
     overflow: hidden;
     font-family: Catamaran;
 }
+body,
+input,
+textarea,
+select,
+button {
+    font: 400 1rem "Catamaran", sans-serif;
+}
 .logo{
     width: 360px;
 }

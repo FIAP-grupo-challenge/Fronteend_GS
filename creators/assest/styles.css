@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Inter", sans-serif;
+body,
+input,
+textarea,
+select,
+button {
+    font: 400 1rem "Catamaran", sans-serif;
 }
-
 html {
     scroll-behavior: smooth;
 }
